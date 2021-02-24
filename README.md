@@ -2,7 +2,7 @@
 
 ## Short Description
 
-A TODO app, with Local Storage.
+A TODO app in <strong>VueJS</strong>, with Local Storage.
 
 <img src="/src/assets/App.jpg" width="500px"/>
 
