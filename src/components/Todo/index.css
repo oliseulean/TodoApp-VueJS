@@ -1,0 +1,154 @@
+body {
+	background-color: #F5F5F5;
+	color: #2c3e50;
+}
+
+.container {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header {
+	display: flex;
+	margin: 20px;
+	height: 50px;
+}
+
+.header ::placeholder {
+	font-style: italic;
+	opacity: 0.5;
+	font-size: 16px;
+}
+
+.box {
+	border: none;
+	width: 90%;
+	padding: 16px 60px 16px 60px;
+	border: none;
+	background: #efefef;
+	transition: background .3s ease;
+}
+
+.box:hover {
+	border: 1px solid black;
+}
+
+.newItem {
+	background: #41B883;
+	color: white;
+	border: none;
+	font-size: 40px;
+	width: 10%;
+}
+
+.todo-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.new-todo-button {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="text"] {
+	outline: none;
+}
+
+.todo-list li {
+	border-bottom: 1px solid #ededed;
+	padding: 10px;
+	height: 50px;
+}
+
+.view {
+	position: relative;
+	height: 100%;
+}
+
+.view label {
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+.view:hover .delete {
+	visibility: visible;
+}
+
+.delete {
+	position: absolute;
+	right: 5px;
+	top: 3px;
+	height: 20px;
+	visibility: hidden;
+	color: red;
+	cursor: pointer;
+}
+
+.footer {
+	padding: 10px 15px;
+	color: #8D7777;
+	height: 50px;
+	display: block;
+	text-align: center;
+}
+
+.filters {
+	display: block;
+	right: 0;
+	left: 0;
+}
+
+.filters li {
+	list-style-type: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.completed {
+	text-decoration-line: line-through;
+	color: gray;
+}
+
+.active {
+	border-bottom: 1px #41B883 solid;
+	font-weight: bold;
+	color: #41B883;
+}
+
+.items {
+	padding: 8px 0;
+}
+
+.items ul.todo-list li:hover {
+	background: #f7fcfa;
+}
+
+input[type=checkbox] {
+	cursor: pointer;
+	filter: hue-rotate(280deg);
+	background-color: #41B883;
+}
+
+.nrOfItems {
+	display: flex;
+	text-align: center;
+	padding: 10px;
+	background-color: #41B883;
+}
+
+.filters {
+	width: 100%;
+	display: flex;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.nrOfItems span {
+	padding-right: 2px;
+	font-weight: bold;
+}
