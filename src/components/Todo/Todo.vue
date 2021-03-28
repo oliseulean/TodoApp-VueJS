@@ -17,6 +17,7 @@
           v-for="(item, index) in itemsFiltered"
           :class="{ completed: item.completed }"
           :key="index"
+          :data-id="item.id"
         >
           <div class="view">
             <input
