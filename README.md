@@ -20,6 +20,12 @@ yarn serve
 ```
 yarn build
 ```
+
+### Run tests
+```
+yarn test:unit
+```
+
 ### Details 
 
 **Main Features:**
