@@ -1,8 +1,10 @@
 <template>
+  <div>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <div class="title"><h1>ToDo App Vue js</h1></div>
     <Todo />
+  </div>
   </div>
 </template>
 

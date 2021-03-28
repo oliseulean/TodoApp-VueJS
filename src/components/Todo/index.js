@@ -1,4 +1,4 @@
-import createUID from "create-unique-id";
+import { uuid } from "vue-uuid";
 
 export default {
   name: "App",
@@ -8,7 +8,8 @@ export default {
       newItem: "",
       itemsLeft: null,
       filter: "all",
-      activeElement: 1
+      activeElement: 1,
+      number: 0,
     };
   },
   created() {
@@ -40,7 +41,7 @@ export default {
     addItem() {
       if (this.newItem.trim() != "") {
         this.items.unshift({
-          id: createUID(10),
+          id: uuid.v4(),
           completed: false,
           name: this.newItem
         });

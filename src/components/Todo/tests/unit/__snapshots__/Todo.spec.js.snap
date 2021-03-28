@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo component Render html correctly 1`] = `
+<div class="container">
+  <header class="header"><input type="text" placeholder="Add item/s" autofocus="autofocus" class="box"> <button class="newItem">+</button></header>
+  <div class="items">
+    <ul class="todo-list"></ul>
+  </div>
+  <!---->
+  <!---->
+</div>
+`;
